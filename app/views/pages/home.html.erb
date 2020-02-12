@@ -28,7 +28,7 @@
   <div class="container container-home text-center">
     <h2> Want to work with us?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
-    <%= link_to "Click here", "", class:"btn btn-success"  %>
+    <%= link_to "Cliquez ici", "", class:"btn btn-success"  %>
   </div>
 </div>
 
@@ -75,20 +75,43 @@
 
 <div class="py-5">
   <div class="container container-home text-center">
-    <h2> Check out our latest works</h2>
+    <h2>Albums</h2>
     <div class="cards">
-      <%= render "shared/card" %>
-      <!-- <%= render "shared/card" %> -->
-      <%= render "shared/card" %>
+      <div class="card m-3" style="width: 18rem;">
+        <%= image_tag "album-corasol.jpg", class:"card-img-top", alt:"Card image cap" %>
+        <div class="card-body">
+          <p class="card-text"><b>The Cosmic Boat "Corasol"</b></p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <%= image_tag "album-caohagan-island.jpg", class:"card-img-top", alt:"Card image cap" %>
+        <div class="card-body">
+          <p class="card-text"><b>Caohagan Island</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card m-3" style="width: 18rem;">
+        <%= image_tag "album-graines-de-reve.jpg", class:"card-img-top", alt:"Card image cap" %>
+        <div class="card-body">
+          <p class="card-text"><b>Voyage Sonore "Graines de Rêves"</b></p>
+        </div>
+      </div>
+      <div class="card m-3" style="width: 18rem;">
+        <%= image_tag "album-winter.jpg", class:"card-img-top", alt:"Card image cap" %>
+        <div class="card-body">
+          <p class="card-text"><b>EP Heart has its Seasons : Winter</b></p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div style="background-color: white" class="py-5">
   <div class="container container-home text-center">
-    <h2> Want to work with us?</h2>
+    <h2>Envie de Collaborer?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
-    <%= link_to "Click here", "", class:"btn btn-success"  %>
+    <%= link_to "Cliquez ici", "", class:"btn btn-success"  %>
   </div>
 </div>
 
@@ -96,19 +119,19 @@
   <div class="container container-home">
     <div class="row justify-content-center">
       <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>WHO WE ARE</h2>
+        <h2>QUI NOUS SOMMES</h2>
       </div>
       <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>LATEST WORKS</h2>
+        <h2>CE QUE NOUS FAISONS</h2>
       </div>
       <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>GET IN TOUCH</h2>
+        <h2>NOUS SUIVRE</h2>
       </div>
       <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>FREE UPDATES</h2>
+        <h2>DES NOUVELLES?</h2>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Update me!</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Dites m'en plus!</button>
         </form>
       </div>
     </div>
