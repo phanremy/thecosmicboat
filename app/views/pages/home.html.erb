@@ -1,7 +1,7 @@
 <div class="master-banner" style="background-image: url(<%= image_path "banner-cosmicboat.png" %>); background-size: cover;">
   <div class="container text-center">
-      <%= link_to "🌄🛒🎁", "https://thecosmicboat.bandcamp.com/merch", class:"btn btn-success px-5", target:"_blank"  %>
-      <%= link_to "🥁🎧🎤", "https://thecosmicboat.bandcamp.com/music", class:"btn btn-primary px-5", target:"_blank"  %>
+      <%= link_to "🛒Merch🎁", "https://thecosmicboat.bandcamp.com/merch", class:"btn btn-success px-5", target:"_blank"  %>
+      <%= link_to "🥁Music🎧", "https://thecosmicboat.bandcamp.com/music", class:"btn btn-primary px-5", target:"_blank"  %>
       <br>
   </div>
 </div>
@@ -13,7 +13,7 @@
         <p class="text-justify">Née d’un premier album Sandy Mango & The Cosmic Boat sorti en octobre 2017, avec la collaboration de 23 amis rencontré en voyage. The Cosmic Boat devient une association en juin 2018. Cette association a pour but de mettre l’art au service de cause humaine, part le biais de concert, d’atelier créatif, d’exposition ou encore de création d’album participatif.</p>
 
 
-        <p>Créations artistiques disponible sur : <%= link_to "www.thecosmicboat.bandcamp.com","https://thecosmicboat.bandcamp.com/"  %>
+        <p>Créations artistiques disponible sur : <%= link_to "www.thecosmicboat.bandcamp.com","https://thecosmicboat.bandcamp.com/", target:"_blank"  %>
       </div>
       <div class="col-12 col-lg-6 py-2 bg-white">
         <p class="text-justify">Sandy Mango artiste française d’origine Taïwanaise et Vietnamienne, professeur et thérapeute est à l’initiative de ce projet associatif et artistique. Elle compose, écrit et joue de plusieurs instruments. Ses oeuvres sont inspirés de ses voyages et séjours en nature.</p>
@@ -30,7 +30,7 @@
 </div>
 
 <div style="background-color: white" class="py-5">
-  <div class="container container-home text-center">
+  <div class="container-home text-center">
     <h2> Beautiful. Clean. Responsive.</h2>
       <div class="row justify-content-center">
         <div class="col-12 col-lg-3">
@@ -70,38 +70,23 @@
   </div>
 </div>
 
-<div class="py-5">
-  <div class="container container-home text-center">
+<div class="py-5 container-home text-center">
+
     <h2>Albums</h2>
+
     <div class="cards">
-      <div class="card m-3" style="width: 18rem;">
-        <%= image_tag "album-corasol.jpg", class:"card-img-top", alt:"Card image cap" %>
-        <div class="card-body">
-          <p class="card-text"><b>The Cosmic Boat "Corasol"</b></p>
-        </div>
-      </div>
-      <div class="card m-3" style="width: 18rem;">
-        <%= image_tag "album-caohagan-island.jpg", class:"card-img-top", alt:"Card image cap" %>
-        <div class="card-body">
-          <p class="card-text"><b>Caohagan Island</b></p>
-        </div>
+      <div class="row justify-content-center">
+        <% @albums.each do |album| %>
+          <div class="col-12 col-sm-6 col-lg-3 py-2">
+            <% @item = album %>
+            <%= link_to @item.cart_path, target:"_blank" do  %>
+              <%= render 'shared/card-tile' %>
+            <% end %>
+          </div>
+        <% end %>
       </div>
     </div>
-    <div class="cards">
-      <div class="card m-3" style="width: 18rem;">
-        <%= image_tag "album-graines-de-reve.jpg", class:"card-img-top", alt:"Card image cap" %>
-        <div class="card-body">
-          <p class="card-text"><b>Voyage Sonore "Graines de Rêves"</b></p>
-        </div>
-      </div>
-      <div class="card m-3" style="width: 18rem;">
-        <%= image_tag "album-winter.jpg", class:"card-img-top", alt:"Card image cap" %>
-        <div class="card-body">
-          <p class="card-text"><b>EP Heart has its Seasons : Winter</b></p>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </div>
 
 <div style="background-color: white" class="py-5">
@@ -112,32 +97,8 @@
   </div>
 </div>
 
-<div style="background-color: #2B4155" class="py-5">
-  <div class="container container-home">
-    <div class="row justify-content-center">
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>QUI NOUS SOMMES</h2>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>CE QUE NOUS FAISONS</h2>
-          <% @albums.each do |album| %>
-            <%= link_to "#" do  %>
-              <p><%= album.title %></p>
-            <% end %>
-          <% end %>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>NOUS SUIVRE</h2>
-      </div>
-      <div class="col-6 col-lg-3 py-2 text-white">
-        <h2>DES NOUVELLES?</h2>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Email">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Dites m'en plus!</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/master-footer' %>
+
+
 
 

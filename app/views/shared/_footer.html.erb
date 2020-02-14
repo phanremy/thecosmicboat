@@ -1,4 +1,11 @@
 <div class="footer">
   <div>The Cosmic Boat</div>
-  <div>Embarquez avec nous!</div>
+  <div>Embarquez avec nous!
+    <%= link_to "https://www.facebook.com/TheCosmicBoat", target:"_blank" do %>
+      <i class="fab fa-facebook pl-3"></i>
+    <% end %>
+    <%= link_to "mailto: the.cosmic.boat@gmail.com", target:"_blank" do %>
+      <i class="far fa-envelope pl-3"></i>
+    <% end %>
+  </div>
 </div>

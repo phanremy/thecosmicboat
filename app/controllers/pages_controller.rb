@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @albums = Merch.all
+    @albums = Merch.where(category: "music")
   end
 
   def accueil
