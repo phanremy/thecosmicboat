@@ -8,18 +8,18 @@
 
 
 # Merch.where
-# album = Merch.create!(
-#   title: "EP Heart has its Seasons : Winter",
-#   category: "music",
-#   description: "The first EP from Sandy Mango
-#     Heart has its Seasons : Winter talks about love and all its adventures
-#     Inspired by the love of love
-#     Includes unlimited streaming of EP Heart has its Seasons : Winter via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.",
-#   price: 1200,
-#   price_currency: "EUR",
-#   image_path: "album-winter.jpg",
-#   cart_path: "https://thecosmicboat.bandcamp.com/album/ep-heart-has-its-seasons-winter",
-#   )
+album = Merch.create!(
+  title: "EP Heart has its Seasons : Winter",
+  category: "music",
+  description: "The first EP from Sandy Mango
+    Heart has its Seasons : Winter talks about love and all its adventures
+    Inspired by the love of love
+    Includes unlimited streaming of EP Heart has its Seasons : Winter via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.",
+  price: 1200,
+  price_currency: "EUR",
+  image_path: "album-winter.jpg",
+  cart_path: "https://thecosmicboat.bandcamp.com/album/ep-heart-has-its-seasons-winter",
+  )
 
 album = Merch.create!(
   title: "Caohagan Island",
