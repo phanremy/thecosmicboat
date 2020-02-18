@@ -10,15 +10,15 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 py-2 bg-white">
-        <p class="text-justify">Née d’un premier album Sandy Mango & The Cosmic Boat sorti en octobre 2017, avec la collaboration de 23 amis rencontré en voyage. The Cosmic Boat devient une association en juin 2018. Cette association a pour but de mettre l’art au service de cause humaine, part le biais de concert, d’atelier créatif, d’exposition ou encore de création d’album participatif.</p>
+        <p class="text-justify"><b>Sandy Hui Bon Hoa</b>, de nom d'artiste <b><%= link_to "Sandy Mango", "https://www.facebook.com/sandymangoart/", target:"_blank" %></b>, grande voyageuse est une <b>artiste indépendante</b> française, <b>multi-instrumentiste</b> et développeuse de <b>projets artistiques et humanitaires</b> avec son association <b><%= link_to "The Cosmic Boat", "https://www.facebook.com/TheCosmicBoat", target:"_blank" %></b>.</p>
 
 
-        <p>Créations artistiques disponible sur : <%= link_to "www.thecosmicboat.bandcamp.com","https://thecosmicboat.bandcamp.com/", target:"_blank"  %>
+        <p class="text-justify"><b>Depuis 2012</b>, elle parcourt le monde en partageant ses <b>oeuvres d’art</b> et en transmettant les outils d’expression artistique auprès d’un <b>public diversifié</b>, au travers de <b>Concerts, Voyage Sonore, Ateliers, Soins, Conférences, Expositions...</b></p>
       </div>
       <div class="col-12 col-lg-6 py-2 bg-white">
-        <p class="text-justify">Sandy Mango artiste française d’origine Taïwanaise et Vietnamienne, professeur et thérapeute est à l’initiative de ce projet associatif et artistique. Elle compose, écrit et joue de plusieurs instruments. Ses oeuvres sont inspirés de ses voyages et séjours en nature.</p>
+        <p class="text-justify">Elle a l'opportunité de participer à plusieurs <b>projets humanitaires et de volontariat social</b>, lui permettant d'élargir ses <b>perceptions</b> et de s'ouvrir à une dimension plus <b>authentique des relations humaines.</b></p>
 
-        <p class="text-justify">Et avec l'aide de son meilleur ami Little Pablo, producteur et multi-instrumentiste. Leurs créations collectives est teintées d'influences venues du monde entier et traduisent la richesse de l'univers poétique du Bateau Cosmique.</p>
+        <p class="text-justify">Ses oeuvres sont inspirées par <b>la nature, ses voyages et les rencontres de la vie.</b></p>
       </div>
     </div>
   </div>
@@ -29,50 +29,11 @@
   </div>
 </div>
 
-<div style="background-color: white" class="py-5">
-  <div class="container-home text-center">
-    <h2> Beautiful. Clean. Responsive.</h2>
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-heart"></i>
-            </div>
-            <div class="asset-text">
-              <h2>Passion</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-lightbulb"></i>
-            </div>
-            <div class="asset-text">
-              <h2>Creativity</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-lg-3">
-          <div class="asset">
-            <div class="asset-img">
-              <i class="far fa-star"></i>
-            </div>
-            <div class="asset-text">
-             <h2>Quality</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/categories' %>
 
 <div class="py-5 container-home text-center">
 
-    <h2>Albums</h2>
+    <h2>Quelques uns de mes Albums</h2>
 
     <div class="cards">
       <div class="row justify-content-center">
@@ -89,13 +50,7 @@
 
 </div>
 
-<div style="background-color: white" class="py-5">
-  <div class="container container-home text-center">
-    <h2>Envie de Collaborer?</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit architecto rerum vitae laboriosam illo soluta, amet maiores fugiat qui animi natus corporis adipisci, impedit non labore quas! Odio, hic, sint!</p>
-    <%= link_to "Cliquez ici", "", class:"btn btn-success"  %>
-  </div>
-</div>
+<%= render 'shared/contact' %>
 
 <%= render 'shared/master-footer' %>
 
